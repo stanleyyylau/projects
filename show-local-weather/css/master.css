@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body {
+  background-image: url("http://st.wthr.ws/sites/default/files/dsc00495_w580_h439.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.top-bar {
+  background-color: white;
+  height: 80px;
+}
+.top-bar .top-bar-inner {
+  width: 1100px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 15px 0;
+  font-size: 15px;
+}
+.top-bar .top-bar-inner .top-bar-left {
+  width: 50%;
+  float: left;
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+.top-bar .top-bar-inner .top-bar-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+  line-height: 23px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.container .location {
+  font-size: 80px;
+  margin: 50px 0 10px 0;
+}
+.container .main-weather {
+  font-size: 30px;
+}
+.container .main-temp {
+  height: 180px;
+  font-size: 180px;
+  line-height: 180px;
+  line-heigh: 0;
+  position: relative;
+}
+.container .main-temp:after {
+  content: "℃";
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  line-height: 0;
+}
+.container .temp-toggle {
+  display: block;
+  border: 1px solid blue;
+  width: 150px;
+  margin: 20px auto;
+  padding: 10px;
+  background: blue;
+  border-radius: 10px;
+  cursor: pointer;
+}

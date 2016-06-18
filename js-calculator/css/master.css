@@ -1,0 +1,48 @@
+#calculatorOuter{
+	width: 300px;
+	margin: 0 auto;
+	height: 430px;
+	background-color: yellow;
+}
+
+.inputKeys {
+    background-color: red;
+    width: 50px;
+    height: 38px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 12px;
+    color: white;
+}
+
+div#keyOuter {
+    width: 280px;
+    margin: 0 auto;
+}
+
+#title {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#valueBox {
+    width: 260px;
+    background-color: pink;
+    height: 30px;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.inputKeys:hover {
+    background-color: #C59D9D;
+    color: yellow;
+    font-weight: bolder;
+    cursor: pointer;
+}

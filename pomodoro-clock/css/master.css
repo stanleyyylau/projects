@@ -1,0 +1,76 @@
+div#bigContainer {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #DCD5D5;
+    position: relative;
+    height: 500px;
+}
+
+
+div#indicatorRight {
+    width: 250px;
+    float: right;
+    background-color: yellow;
+}
+
+div#indicatorLeft {
+    width: 250px;
+    background-color: red;
+    float: left;
+}
+
+div#theClock {
+    height: 150px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+span.indicatorFont {
+    font-size: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+span.indicatorTitle {
+    font-size: 18px;
+}
+
+
+.centerThisThing {
+    width: 160px;
+    margin: 0 auto;
+}
+
+
+div#theClock {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: pink;
+    clear: both;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    cursor: pointer;
+}
+
+div#sessionOrBreak {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+
+div#countDown {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 110px;
+}
+
+
+span.minusAndPlus {
+    cursor: pointer;
+}

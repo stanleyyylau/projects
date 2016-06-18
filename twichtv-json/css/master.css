@@ -1,0 +1,57 @@
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+div#controlBtns {
+  background-color: #ECD2D2;
+  height: 50px;
+}
+
+div#content {
+  background-color: #A58181;
+}
+
+.streaming {
+  width: 400px;
+  float: right;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.name {
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.logo {
+  float: left;
+  text-align: center;
+}
+
+div#content {
+  color: white;
+}
+
+img.logoimg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.channels {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.onlinenow {
+  /* background-color: rgba(255, 0, 0, 0.68); */
+  /* margin-left: 0px; */
+  /* margin-right: 0px; */
+  /* padding-left: 103px; */
+  font-size: large;
+  font-weight: 600;
+  color: #B32424;
+}

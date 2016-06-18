@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*My own CSS
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #607D8B;
+}
+
+body {
+  background-color: #272222;
+}
+
+#machine {
+  width: 100%;
+  background-color: rgba(179, 102, 102, 0.26);
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  border-radius: 27px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.quoteFrom {
+  text-align: right;
+}
+
+.byMe {
+  margin-bottom: -60px;
+  text-align: center;
+}
+
+.quoteRow {
+  /* margin-bottom: 50px; */
+  /* margin-top: 50px; */
+  padding: 30px 0 30px 0;
+}
+
+#toReplace {
+  line-height: 47px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+
+/*To center this app*/
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 3px 15px 3px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button.btn.btn-primary.tweet {
+  float: left;
+}
+
+button.newQuote.btn.btn-primary.generate {
+  float: right;
+  display: inline-block;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 11px;
+  border: 0;
+  background-color: rgba(232, 229, 229, 0.43);
+  color: #440B1F;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  display: table;
+}
+
+.clearFix:after {
+  clear: both;
+}
+
+.clearFix {
+  clear: both;
+  *zoom: 1;
+}
+
+.tweet {
+  background-color: #496B84;
+  color: white;
+}
+
+i.fa.fa-twitter {
+  margin-right: 5px;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 11px;
+  border: 0;
+  background-color: rgb(73, 107, 132);
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #324350;
+}
+
+h3#toReplace {
+  text-align: left;
+}

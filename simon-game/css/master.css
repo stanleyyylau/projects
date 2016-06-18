@@ -1,0 +1,58 @@
+div#wrapper {
+  width: 510px;
+  margin: 0 auto;
+  height: 600px;
+}
+
+div#controlButtons {
+  height: 100px;
+  background-color: wheat;
+}
+
+.gameBox {
+  width: 250px;
+  height: 250px;
+}
+
+.gameBox {
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
+div#boxRed {
+  background-color: red;
+  opacity: 0.3;
+}
+
+div#boxBlue {
+  background-color: blue;
+  opacity: 0.3;
+}
+
+div#boxYellow {
+  background-color: yellow;
+  opacity: 0.3;
+}
+
+div#boxGreen {
+  background-color: green;
+  opacity: 0.3;
+}
+
+.onPress {
+  opacity: 1.0!important;
+}
+
+.gameBox {
+  cursor: pointer;
+}
+
+.gameBox {
+  border-radius: 50%;
+}
+
+div#game {
+  border-style: double;
+  height: 500px;
+}

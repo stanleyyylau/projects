@@ -1,0 +1,25 @@
+#wrapper {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+.cells {
+  width: 156px;
+  height: 156px;
+  float: left;
+  border-width: 5px;
+  border-color: yellow;
+  border-style: double;
+}
+
+p.vertical {
+  font-size: 50px;
+  display: block;
+  width: 155px;
+  text-align: center;
+  cursor: pointer;
+  height: 60px;
+}
