@@ -19,7 +19,7 @@ Enemy.prototype.update = function(dt) {
     // all computers.
     this.x += this.speed * dt;
     this.reset();
-    this.checkCollisions();
+    this.checkCollisions(player);
     //I need to write another thing to handle collision
 };
 
@@ -38,16 +38,14 @@ Enemy.prototype.reset = function() {
 };
 
 // Check if enemy collide with player
-Enemy.prototype.checkCollisions = function() {
-    for (var i = 0; i < allEnemies.length; i++) {
-        if ((allEnemies[i].x) <= player.x + 30 &&
-            (allEnemies[i].x + 30) >= (player.x) &&
-            (allEnemies[i].y) <= player.y + 30 &&
-            (allEnemies[i].y + 30) >= (player.y)) {
+Enemy.prototype.checkCollisions = function(whom) {
+        if ((this.x) <= whom.x + 30 &&
+            (this.x + 30) >= (whom.x) &&
+            (this.y) <= whom.y + 30 &&
+            (this.y + 30) >= (whom.y)) {
             // reset player to start position if collide with enemy
-            player.reset();
+            whom.reset();
         }
-    }
 };
 
 // Now write your own player class
@@ -58,8 +56,6 @@ var Player = function (x,y){
     this.x=x;
     this.y=y;
 }
-
-Player.prototype.update = function(dt){};
 
 Player.prototype.render = function() {
     //insruction ask me to use to code from enemy directly
