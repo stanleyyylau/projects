@@ -193,9 +193,9 @@ section#home {
 	margin: 0 auto;
 }
 
-.container{
-	width: 960px;
-	margin: 0 auto;
+.container {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 
@@ -219,7 +219,7 @@ section#home {
 */
 section#myProjects {
     background-color: white;
-    min-width: 960px;
+    max-width: 960px;
     color: #607D8B;
     padding: 60px 0 50px 0;
 }
@@ -399,4 +399,127 @@ footer a {
 footer {
     padding: 40px 0 40px 0;
     background-color: #3C3533;
+}
+
+
+
+@media screen and (max-width: 560px) {
+	.project-item {
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+	}
+
+	.col-1-2.social {
+    width: 100%;
+	}
+
+	.col-1-2.contact-form {
+    display: none;
+	}
+
+	footer navigation li {
+    display: none;
+    margin-right: 30px;
+    text-decoration: none;
+	}
+
+	footer small {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+	}
+
+	header h1 {
+    display: none;
+	}
+
+	header navigation {
+    margin-top: 20px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+	}
+
+	#home h2 {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 5px;
+	}
+
+	section#home {
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    word-spacing: 4px;
+    letter-spacing: 0.5px;
+    padding: 30px 0;
+	}
+
+	.social h3 {
+    margin: 0 0 4px 0;
+	}
+
+}
+
+
+
+
+@media screen and (min-width:561px) and (max-width: 780px) {
+	.project-item {
+	    width: 50%;
+	    padding: 1%;
+	}
+
+	footer {
+    padding: 40px 20px;
+	}
+
+	header h1{
+		display: none;
+	}
+
+	header navigation {
+    margin-top: 30px;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+	}
+
+	section#home {
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    word-spacing: 4px;
+    letter-spacing: 0.5px;
+    padding: 30px 0;
+	}
+
+
+
+}
+
+
+@media screen and (min-width: 781px) {
+	.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+	}
+
+
+
+}
+
+
+@media screen and (min-width: 960px) {
+	section#myProjects {
+    background-color: white;
+    max-width: 100%;
+    color: #607D8B;
+    padding: 60px 0 50px 0;
+    margin: 0 auto;
+    width: 100%;
+}
 }
