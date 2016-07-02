@@ -154,17 +154,20 @@ body {
 }
 
 body {
-  background-color: #272222;
+    background-color: #009688;
 }
 
 #machine {
-  width: 100%;
-  background-color: rgba(179, 102, 102, 0.26);
-  padding: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  border-radius: 27px;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 27px;
+    -webkit-box-shadow: 4px 3px 58px 12px rgba(148,102,148,1);
+    -moz-box-shadow: 4px 3px 58px 12px rgba(148,102,148,1);
+    box-shadow: 4px 3px 58px -1px rgb(29, 10, 29);
 }
 
 h1 {
@@ -181,16 +184,13 @@ h1 {
 }
 
 .quoteRow {
-  /* margin-bottom: 50px; */
-  /* margin-top: 50px; */
-  padding: 30px 0 30px 0;
+    padding: 30px 20px;
 }
 
 #toReplace {
-  line-height: 47px;
-  font-size: 20px;
-  color: white;
-  letter-spacing: 1.5px;
+    line-height: 47px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
 }
 
 
@@ -292,5 +292,181 @@ button:hover {
 }
 
 h3#toReplace {
-  text-align: left;
+    text-align: left;
+    display: inline;
+    padding-left: 10px;
+}
+
+i.fa.fa-quote-left {
+    font-size: x-large;
+}
+
+
+
+/*theme supports*/
+
+.theme-0 body {
+    background-color: #009688;
+}
+.theme-0 blockquote{
+  color:#009688;
+  animation-name: fadeIn;
+  opacity: 1;
+}
+.theme-0 button {
+  background-color: #009688;
+}
+
+
+.theme-1 body {
+    background-color: #9c27b0;
+}
+.theme-1 blockquote{
+  color:#9c27b0;
+  opacity: 1;
+}
+.theme-1 button {
+  background-color: #9c27b0;
+}
+
+
+.theme-2 body {
+    background-color: #ff9800;
+}
+.theme-2 blockquote{
+  color:#ff9800;
+  opacity: 1;
+}
+.theme-2 button {
+  background-color: #ff9800;
+}
+
+
+.theme-3 body {
+    background-color: #cddc39;
+}
+.theme-3 blockquote{
+  color: #cddc39;
+  opacity: 1;
+}
+.theme-3 button {
+  background-color: #cddc39;
+}
+
+
+.theme-4 body {
+    background-color: #03a9f4;
+}
+.theme-4 blockquote{
+  color:#03a9f4;
+  opacity: 1;
+}
+.theme-4 button {
+  background-color: #03a9f4;
+}
+
+
+.theme-5 body {
+    background-color: #795548;
+}
+.theme-5 blockquote{
+  color:#795548;
+  opacity: 1;
+}
+.theme-5 button {
+  background-color: #795548;
+}
+
+
+/*animation is trigger everytime a CSS property is changed*/
+body {
+    transition: background-color 2s;
+    animation: fadeIn 1s 0s;
+}
+
+blockquote {
+    transition: color 1s, opacity .5s;
+    animation: fadeIn 1s 0s;
+    opacity: 1;
+}
+
+#machine .quoteRow .no-opa {
+  opacity: 0;
+}
+
+button {
+    transition: background-color 1s;
+    animation: fadeIn 1s 0s;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 100%;
+  }
+
+.middle {
+    display: block;
+    height: 100%;
+}
+
+.outer {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.outer {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#machine {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    border-radius: 0;
+}
+
+button {
+    min-width: 50px;
+}
+
+#toReplace {
+    line-height: 47px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.quoteRow {
+    padding: 30px 0;
+}
+
+
 }
