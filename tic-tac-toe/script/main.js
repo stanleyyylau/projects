@@ -70,6 +70,13 @@ function whichPlayerWin() {
             alert("X wins the game");
             return true;
         }
+        if ($("#cell1").text()!== "" && $("#cell2").text()!== "" && $("#cell3").text()!== ""
+            && $("#cell4").text()!== "" && $("#cell5").text()!== "" && $("#cell6").text()!== ""
+            && $("#cell7").text()!== "" && $("#cell8").text()!== "" && $("#cell9").text()!== ""
+      ){
+        alert("TIE!!! Plase again!");
+        return true;
+      }
         return false;
     } // end whichPlayerWin function
 
@@ -114,6 +121,17 @@ function computer(playerCom) {
     }
     console.log("computer's random position is " + position);
     $("#cell" + position).text(playerCom);
+
+    console.log($("#cell1").text());
+    console.log($("#cell2").text());
+    console.log($("#cell3").text());
+    console.log($("#cell4").text());
+    console.log($("#cell5").text());
+    console.log($("#cell6").text());
+    console.log($("#cell7").text());
+    console.log($("#cell8").text());
+    console.log($("#cell9").text());
+
     takenPos.push(position);
     again = whichPlayerWin();
     if (again === true) return playAgain();
