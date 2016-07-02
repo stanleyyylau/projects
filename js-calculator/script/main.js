@@ -37,27 +37,20 @@ window.onload=function(){
 		}
 
 
-	document.getElementById("0").addEventListener("click",getValue);
-	document.getElementById("1").addEventListener("click",getValue);
-	document.getElementById("2").addEventListener("click",getValue);
-	document.getElementById("3").addEventListener("click",getValue);
-	document.getElementById("4").addEventListener("click",getValue);
-	document.getElementById("5").addEventListener("click",getValue);
-	document.getElementById("6").addEventListener("click",getValue);
-	document.getElementById("7").addEventListener("click",getValue);
-	document.getElementById("8").addEventListener("click",getValue);
-	document.getElementById("9").addEventListener("click",getValue);
 
-	document.getElementById("divide").addEventListener("click",getValue);
-	document.getElementById("multiply").addEventListener("click",getValue);
-	document.getElementById("subtract").addEventListener("click",getValue);
-	document.getElementById("add").addEventListener("click",getValue);
-	document.getElementById("dot").addEventListener("click",getValue);
-	document.getElementById("ac").addEventListener("click",getValue);
-	document.getElementById("getmould").addEventListener("click",getValue);
 
 	document.getElementById("deleteOne").addEventListener("click",backWard);
 
 	document.getElementById("result").addEventListener("click",test);
+
+
+	// Event listening for all input keys
+	var $inputs = document.querySelectorAll(".input-control");
+	for(var i=0; i < $inputs.length;i++){
+		$inputs[i].addEventListener("click",getValue);
+	}
+
+
+
 
 }; //end window onload
