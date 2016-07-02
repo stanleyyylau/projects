@@ -156,3 +156,24 @@ $(document).ready(function() {
     }
 
 });
+
+
+
+
+// for responsiveness
+
+function jsUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = window.innerWidth ||
+                document.documentElement.clientWidth ||
+                document.body.clientWidth;
+    console.log(width);
+    if(width<=500){
+      document.getElementById('blueDiv').style.width = width+"px";  // Display the width
+      document.getElementById('blueDiv').style.height = width+"px";// Display the height
+    }
+
+
+};
+window.onload = jsUpdateSize;       // When the page first loads
+window.onresize = jsUpdateSize;     // When the browser changes size

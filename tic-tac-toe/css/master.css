@@ -74,13 +74,12 @@ body {
 
 p.vertical {
     font-size: 50px;
-    display: block;
     width: 100%;
-    text-align: center;
-    cursor: pointer;
     height: 100%;
-    line-height: 156px;
-    vertical-align: middle;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*flexbox for centering*/
