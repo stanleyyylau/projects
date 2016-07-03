@@ -22,6 +22,7 @@
     border-radius: 14px;
     background-color: #75706e;
     color: white;
+    font-family: 'Droid Serif', serif;
 }
 
 div#resultContent {
@@ -130,6 +131,19 @@ table {
 }
 
 
+#resultContent p {
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+}
+
+div#resultContent {
+    max-width: 600px;
+    /* margin: 0 auto; */
+    /* position: relative; */
+    /* top: 100px; */
+    font-family: 'Raleway', sans-serif;
+}
+
 *,
 *:before,
 *:after {
@@ -195,6 +209,8 @@ button#confirmInput {
     border: 1px solid #8BC34A;
     font-size: 20px;
     color: white;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
 }
 
 .form-group {
@@ -208,5 +224,5 @@ button#confirmInput {
 #resultContent li a {
     font-size: 24px;
     margin-bottom: 10px;
-    display: block;
+    display: inline-block;
 }
