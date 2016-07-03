@@ -84,9 +84,9 @@ function appendContent(logo,url,name,status){
 		logo="https://dummyimage.com/50x50/ecf0e7/5c5457.jpg&text=0x3F";
 	};
 	if(status!="offline" && status!="Account closed" && status!="Account Not exist"){
-	statushtml+='<div class="row channels onlinenow"> <div class="col-md-2"><img class="logoimg" src="'+logo+'"></div> <div class="col-md-4"><div class="name"><a target="_blank" href="'+url+'">'+name+'</a></div></div> <div class="col-md-6"><div class="streaming">'+status+'</div></div></div>';
+	statushtml+='<div class="row channels onlinenow"> <div class="col-md-2 col-sm-2 col-xm-2"><img class="logoimg" src="'+logo+'"></div> <div class="col-md-4 col-sm-4 col-xm-4"><div class="name"><a target="_blank" href="'+url+'">'+name+'</a></div></div> <div class="col-md-6 col-sm-6 col-xm-6"><div class="streaming">'+status+'</div></div></div>';
 	}else{
-	statushtml+='<div class="row channels offlinenow"> <div class="col-md-2"><img class="logoimg" src="'+logo+'"></div> <div class="col-md-4"><div class="name"><a target="_blank" href="'+url+'">'+name+'</a></div></div> <div class="col-md-6"><div class="streaming">'+status+'</div></div></div>';
+	statushtml+='<div class="row channels offlinenow"> <div class="col-md-2 col-sm-2 col-xm-2"><img class="logoimg" src="'+logo+'"></div> <div class="col-md-4 col-sm-4 col-xm-4"><div class="name"><a target="_blank" href="'+url+'">'+name+'</a></div></div> <div class="col-md-6 col-sm-6 col-xm-6"><div class="streaming">'+status+'</div></div></div>';
 	}
 	$("#content").html(statushtml);
 	}
