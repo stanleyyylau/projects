@@ -191,6 +191,9 @@ h1 {
     line-height: 47px;
     font-size: 20px;
     letter-spacing: 1.5px;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -397,6 +400,8 @@ blockquote {
 button {
     transition: background-color 1s;
     animation: fadeIn 1s 0s;
+    /* font-family: 'Droid Serif', serif; */
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -445,7 +450,7 @@ html {
 #machine {
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: #000000;
     padding: 10px;
     padding-left: 5%;
     padding-right: 5%;
