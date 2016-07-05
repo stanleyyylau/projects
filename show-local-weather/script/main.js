@@ -62,7 +62,7 @@ var handler = {
     // $('#mainwea').append(showiconcode);
     model.weatherInfo.temperatureBy = "f";
     model.weatherInfo.cityName = data.name;
-    model.weatherInfo.temperature = data.main.temp;
+    model.weatherInfo.temperature = data.main.temp.toFixed(1);
     model.weatherInfo.mainWeather = data.weather[0].main;
     view.updateInfo();
   },
@@ -70,14 +70,14 @@ var handler = {
 
     if ($('.temp-toggle').html()==="Convert to C") {
       model.weatherInfo.temperature = model.weatherInfo.temperature / 33.8;
-      model.weatherInfo.temperature = model.weatherInfo.temperature.toFixed(2);
+      model.weatherInfo.temperature = model.weatherInfo.temperature.toFixed(1);
       model.weatherInfo.temperatureBy = "c";
       view.updateInfo();
       $('.temp-toggle').html("Convert to F");
     }
     else if($('.temp-toggle').html()==="Convert to F"){
       model.weatherInfo.temperature = model.weatherInfo.temperature * 33.8;
-      model.weatherInfo.temperature = model.weatherInfo.temperature.toFixed(2);
+      model.weatherInfo.temperature = model.weatherInfo.temperature.toFixed(1);
       model.weatherInfo.temperatureBy = "f";
       view.updateInfo();
       $('.temp-toggle').html("Convert to C");
