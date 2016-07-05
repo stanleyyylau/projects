@@ -50,15 +50,15 @@ html {
     max-height: 100%;
 }
 .container .location {
-    font-size: 80px;
+    font-size: 50px;
 }
 .container .main-weather {
   font-size: 30px;
 }
 .container .main-temp {
-    height: 180px;
-    font-size: 180px;
-    line-height: 180px;
+    height: 100px;
+    font-size: 100px;
+    line-height: 100px;
     position: relative;
 }
 /*.container .main-temp:after {
