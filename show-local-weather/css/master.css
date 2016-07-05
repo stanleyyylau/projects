@@ -61,13 +61,13 @@ html {
     line-height: 180px;
     position: relative;
 }
-.container .main-temp:after {
+/*.container .main-temp:after {
   content: "℃";
   font-size: 30px;
   position: absolute;
   top: 30px;
   line-height: 0;
-}
+}*/
 .container .temp-toggle {
     display: block;
     border: 1px solid blue;
@@ -100,4 +100,12 @@ body {
 
 .top-bar-right span {
     width: 100%;
+}
+
+
+.top-bar {
+    background-color: white;
+    height: 10%;
+    padding: 5px 10px;
+    min-height: 50px;
 }

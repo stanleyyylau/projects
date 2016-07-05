@@ -4,9 +4,9 @@ var model = {
     latitude: null,
   },
   weatherInfo: {
-    cityName: "we're detecting...",
-    mainWeather: "trying to detect...",
-    temperature: "detecting...",
+    cityName: "...",
+    mainWeather: "...",
+    temperature: "...",
     temperatureBy: "",
   },
   weatherAPI: {
@@ -17,9 +17,9 @@ var model = {
 
 var view = {
   updateInfo: function() {
-    $('#temptype').html(model.weatherInfo.temperature + " " + model.weatherInfo.temperatureBy);
-    $('#location').html(model.weatherInfo.cityName);
-    $('#mainwea').html(model.weatherInfo.mainWeather);
+    $('.main-temp').html(model.weatherInfo.temperature + " " + model.weatherInfo.temperatureBy);
+    $('.location').html(model.weatherInfo.cityName);
+    $('.main-weather').html(model.weatherInfo.mainWeather);
     // var icon = data.weather[0].icon;
     // var iconlink = "http://www.openweathermap.org/img/w/" + icon + ".png";
     // var showiconcode = '<img src="' + iconlink + '">';
@@ -67,29 +67,30 @@ var handler = {
     view.updateInfo();
   },
   convertoc: function() {
-    if (model.weatherInfo.temperatureBy === "f") {
+
+    if ($('.temp-toggle').html()==="Convert to C") {
       model.weatherInfo.temperature = model.weatherInfo.temperature / 33.8;
       model.weatherInfo.temperature = model.weatherInfo.temperature.toFixed(2);
       model.weatherInfo.temperatureBy = "c";
       view.updateInfo();
+      $('.temp-toggle').html("Convert to F");
     }
-  },
-  toF: function() {
-    if (model.weatherInfo.temperatureBy === "c") {
+    else if($('.temp-toggle').html()==="Convert to F"){
       model.weatherInfo.temperature = model.weatherInfo.temperature * 33.8;
       model.weatherInfo.temperature = model.weatherInfo.temperature.toFixed(2);
       model.weatherInfo.temperatureBy = "f";
       view.updateInfo();
+      $('.temp-toggle').html("Convert to C");
     }
-  }
+
+  },
+
 }
 
 $(document).ready(function() {
   handler.init();
-  $(".celsius").click(function() {
+  $(".temp-toggle").click(function() {
     handler.convertoc();
   });
-  $(".fahrenheit").click(function() {
-    handler.toF();
-  });
+
 });
