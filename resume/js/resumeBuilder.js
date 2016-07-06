@@ -7,11 +7,11 @@ var bio = {
         email: "stanleyyylau@gmail.com",
         github: "stanleyyylau",
         twitter: "stanleyyylau",
-        location: "China"
+        location: "Dongguan, China"
     },
-    welcomeMessage: "Awesome self-taught front-end developer",
+    welcomeMessage: "Passion and perseverance keeps me learning, exploring new things and stay on the cutting edge of new technology",
     skills: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
-    biopic: "https://placekitten.com/30/30",
+    biopic: "https://avatars2.githubusercontent.com/u/16324279?v=3&s=460",
     display: function() {
             // Below code is all about displaying bio 
             var formatedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -121,7 +121,7 @@ var education = {
 var work = {
     jobs: [{
         employer: "Simpro IT",
-        title: "Growth Hacker",
+        title: "Marketing Director",
         location: "Dongguan China",
         dates: "2015-05",
         description: "Where My responsibility is to conduct online marketing"
