@@ -201,9 +201,10 @@ span {
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
+    display: none;
 }
 
 @media only screen and (min-width: 750px) {
@@ -217,4 +218,38 @@ span {
 /*My own CSS*/
 .education-entry h3 {
     padding-left: 0;
+}
+
+
+.project-entry img {
+    width: 200px;
+    height: 150px;
+}
+
+#header span {
+    color: white;
+}
+
+#projects a h2 {
+    color: #009688;
+}
+
+#projects a h2:after {
+    content: "VIEW MORE";
+    font-size: 10px;
+    position: relative;
+    top: -8px;
+    left: 5px;
+}
+
+#projects a h2:hover {
+    color: red;
+}
+
+.title-entry {
+    color: #3db2d7;
+}
+
+#education a {
+    display: none;
 }

@@ -10,10 +10,10 @@ var bio = {
         location: "Dongguan, China"
     },
     welcomeMessage: "Passion and perseverance keeps me learning, exploring new things and stay on the cutting edge of new technology",
-    skills: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+    skills: ["HTML5 & CSS3", "JavaScript", "jQuery", "Bootstrap", "KnockoutJS", "jasmineJS", "Github"],
     biopic: "https://avatars2.githubusercontent.com/u/16324279?v=3&s=460",
     display: function() {
-            // Below code is all about displaying bio 
+            // Below code is all about displaying bio
             var formatedRole = HTMLheaderRole.replace("%data%", bio.role);
             $("#header").prepend(formatedRole);
             var formatedName = HTMLheaderName.replace("%data%", bio.name);
@@ -57,31 +57,45 @@ var bio = {
 };
 
 var education = {
-    schools: [{
+    schools: [
+     {
+        name: "Omeida English Colleage",
+        location: "GuangXi, China",
+        degree: "Graduate",
+        majors: ["Business English", "oral Egnlish"],
+        dates: "2013-01-15",
+        url: "http://www.omeida.com"
+    }, {
         name: "Free Code Camp",
-        location: "USA",
-        degree: "Bachelor",
+        location: "Online",
+        degree: "Graduate",
         majors: ["Front-end development", "Back-end development"],
         dates: "2016-01-15",
         url: "http://www.freecodecamp.com"
     }, {
-        name: "Omeida English Colleage",
-        location: "China",
-        degree: "Bachelor",
-        majors: ["Business English", "oral Egnlish"],
-        dates: "2013-01-15",
-        url: "http://www.omeida.com"
+        name: "Udacity Front-end nano degree",
+        location: "Online",
+        degree: "In-progress",
+        majors: ["Front-end development"],
+        dates: "2016-05-28",
+        url: "http://www.udacity.com"
     }],
-    onlineCourses: [{
-        title: "Udacity online course",
-        school: "Udacity",
-        date: "2016-05-26",
-        url: "http://www.udacity.com"
+    onlineCourses: [
+    {
+        title: "HTML and CSS",
+        school: "CodeSchool",
+        date: "2016-02-18",
+        url: "http://www.codeshool.com"
     }, {
-        title: "Udacity online course",
-        school: "Udacity",
-        date: "2016-05-26",
-        url: "http://www.udacity.com"
+        title: "Practical Javascript",
+        school: "Watch and code",
+        date: "2016-05-5",
+        url: "http://www.watchandcode.com"
+    }, {
+        title: "Understanding the weird parts of JS",
+        school: "Udemy",
+        date: "2016-07-5",
+        url: "http://www.udemy.com"
     }],
     display: function() {
             $("#education").append(HTMLschoolStart);
@@ -120,17 +134,17 @@ var education = {
 
 var work = {
     jobs: [{
-        employer: "Simpro IT",
+        employer: "Winpin Tech",
+        title: "Online Marketing Specialist",
+        location: "Dongguan China",
+        dates: "2014",
+        description: "Provide strategic marketing advice and implement them</br>analyse and optimise winpin's google Adwords account</br>Successfully acquire 25 quality leads within a month for the company"
+    }, {
+        employer: "Simproit",
         title: "Marketing Director",
         location: "Dongguan China",
-        dates: "2015-05",
-        description: "Where My responsibility is to conduct online marketing"
-    }, {
-        employer: "Facebook",
-        title: "Front-end developer",
-        location: "USA",
-        dates: "2017-05",
-        description: "Where My responsibility is to conduct online marketing"
+        dates: "2015",
+        description: "Build and maintain Wordpress-based websites for client</br>Create and manage google Adwords accounts for clients</br>Responsible for overseas technical outsource and document translation"
     }],
     display: function() {
         $("#workExperience").append(HTMLworkStart);
@@ -151,20 +165,53 @@ var work = {
 
 var projects = {
     projects: [{
-        title: "JS Calculator",
-        dates: "2016-05-01",
-        description: "A very nice js Calculator created by me",
-        images: ["http://placekitten.com/200/200", "http://placekitten.com/200/200", "http://placekitten.com/200/200"]
+        title: "Build A Map with Google API",
+        link: "https://stanleyyylau.github.io/projects/map-project",
+        dates: "2016",
+        description: "build an app with KnockoutJS that shows a map and markers for different locations, when marker is clicked, window is popped up with info about that location.",
+        images: ["https://stanleyyylau.github.io/projects/img/map%20project.png"]
     }, {
-        title: "Weather APP",
-        dates: "2016-04-01",
-        description: "A very nice js weather app created by me",
-        images: ["http://placekitten.com/200/200", "http://placekitten.com/200/200"]
+        title: "Build a Simon Game",
+        link: "https://stanleyyylau.github.io/projects/simon-game",
+        dates: "2016",
+        description: "build an app that resembles the tradition Simon Game and user can choose to play regular or strict mode. Two second countdown limit are also implemented.",
+        images: ["https://stanleyyylau.github.io/projects/img/simon%20game.png"]
+    }, {
+    	title: "Build a Tic Tac Toe Game",
+    	dates: "2016",
+    	link: "https://stanleyyylau.github.io/projects/tic-tac-toe",
+    	description: "build the tradition Tic Tac Toe game in vanilla Javascript, user can choose to play X or Y and the game will resume ever time a player win or lose.",
+    	images: ["https://stanleyyylau.github.io/projects/img/tic%20tac%20tow.png"]
+    }, {
+    	title: "Build a JavaScript Calculator",
+    	link: "https://stanleyyylau.github.io/projects/js-calculator",
+    	dates: "2016",
+    	description: "build a calculator app with vanilla javascript",
+    	images: ["https://stanleyyylau.github.io/projects/img/calculator.png"]
+    },{
+    	title: "Use the Twitchtv JSON API",
+    	link: "https://stanleyyylau.github.io/projects/twichtv-json",
+    	dates: "2016",
+    	description: "built an app that retrieves data from Twichtv's API and display channel information and status, also provides a function for users to filter between online, offline and all.",
+    	images: ["https://stanleyyylau.github.io/projects/img/twittch%20tv.png"]
+    }, {
+    	title: "Build a Pomodoro Clock",
+    	link: "https://stanleyyylau.github.io/projects/pomodoro-clock",
+    	dates: "2016",
+    	description: "build a pomodoro clock that has a 5 minutes default break on every 25-minutes section, users can also customise break and section length.",
+    	images: ["https://stanleyyylau.github.io/projects/img/the%20clock.png"]
+    }, {
+    	title: "Online Work Portfolio",
+    	link: "https://stanleyyylau.github.io/projects/portfolio-fcc/",
+    	dates: "2016",
+    	description: "Due to the limitation of this webpage, I can't show all of my projects here, Please visit 'www.stanleyyylau.github.io/projects' for more of my projects",
+    	images: ["https://stanleyyylau.github.io/projects/img/portfolio.png"]
     }],
     display: function() {
         $("#projects").append(HTMLprojectStart);
         for (var i = 0; i < projects.projects.length; i++) {
             var formatedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+            	formatedTitle = formatedTitle.replace("#", projects.projects[i].link);
             var formatedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
             // formatedWorkEmployer += formatedWorkTitle;
             var formatedDes = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
@@ -182,8 +229,8 @@ var projects = {
 
 
 //let's call those functions and add maps
-work.display();
 projects.display();
+work.display();
 education.display();
 bio.display();
 $("#mapDiv").append(googleMap);
